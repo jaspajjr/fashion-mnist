@@ -8,5 +8,5 @@ if [ "$1" = "start" ]; then
 elif [ "$1" = "-b" ]; then
   exec /bin/bash
 elif [ "$1" = "-t" ]; then
-  (cd /data ; py.test)
+  (cd /data ; pytest -p no:warnings)
 fi
